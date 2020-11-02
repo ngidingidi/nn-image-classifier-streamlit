@@ -17,7 +17,9 @@ st.write("""
           # My ML Neural Network Image Classifier
          """)
 
-file = st.file_uploader("Please upload an image. Image should be a building, forest, glacier, mountain, sea, or street.", 
+file = st.file_uploader("Please upload an image (jpg or png). Image should be a building, \
+                  forest, glacier, mountain, sea, or street. For more information, please visit:\
+                  https://github.com/ngidingidi/nn-image-classifier-streamlit", 
                          type=["jpg", "png"])
 
 def import_and_predict(image_data, model):
