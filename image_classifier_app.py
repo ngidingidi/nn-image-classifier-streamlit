@@ -17,7 +17,8 @@ st.write("""
           # My ML Neural Network Image Classifier
          """)
 
-file = st.file_uploader("Please upload an image", type=["jpg", "png"])
+file = st.file_uploader("Please upload an image. Image should be a building, forest, glacier, mountain, sea, or street.", 
+                         type=["jpg", "png"])
 
 def import_and_predict(image_data, model):
   size = (180,180)
